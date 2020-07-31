@@ -1,0 +1,47 @@
+{
+  "name": "AudUserChange",
+  "fields": [
+    {
+      "fieldName": "aucId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "aucChangeType",
+      "fieldType": "ChangeType",
+      "fieldValues": "USER_CREATION,USER_BLOCK,USER_UNBLOCK,PRIVILEGES_DELETING,PREVILEGES_ADDING"
+    },
+    {
+      "fieldName": "aucChangeDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "aucUserId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "aucDepartmentId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "aucModifiedUserId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "aucPermissions",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20200731121856",
+  "entityTableName": "aud_user_change",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "jhipsterSampleApplication",
+  "applications": "*",
+  "microserviceName": "jhipsterSampleApplication"
+}
