@@ -1,0 +1,28 @@
+entity AudUserChange {
+	aucId Long,
+	aucChangeType ChangeType,
+	aucChangeDate Instant,
+	aucUserId String,
+	aucDepartmentId String,
+	aucModifiedUserId String,
+	aucPermissions String
+}
+
+enum ChangeType {
+    USER_CREATION,
+    USER_BLOCK,
+    USER_UNBLOCK,
+    PRIVILEGES_DELETING,
+    PREVILEGES_ADDING
+}
+
+paginate AudUserChange with pagination
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
