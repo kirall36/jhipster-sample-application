@@ -45,6 +45,7 @@ public class CacheConfiguration {
     @Bean
     public JCacheManagerCustomizer cacheManagerCustomizer() {
         return cm -> {
+            createCache(cm, com.mycompany.myapp.domain.AudUserChange.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
